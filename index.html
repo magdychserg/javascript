@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        "use strict";
+        // первое задание
+        let tempc = prompt("Введите температуру в градусах по Цельсию");
+        let tempf = (9 / 5) * tempc + 32;
+        alert("Температура в Фаренгейтах равна " + tempf);
+
+        //второе задание
+        let name = ("Василий");
+        let admin = name;
+        alert(admin);
+
+        //третье задание
+        let result1 = 10 + 10 + "10";
+        console.log(result1);// сначала сложение потом конкатенация 
+        let result2 = 10 + "10" + 10;
+        console.log(result2);//происходит конкатенация
+        let result3 = 10 + 10 + +"10";
+        console.log(result3);//если я правильно понял то сдесь в конце унарный плюс превратил значение в число
+        let result4 = 10 / - "";
+        console.log(result4);//получается отрицательная бесконечность, в конце перед кавычками унарный минус
+        let result5 = 10 / +"2,5";
+        console.log(result5);//унарый плюс неможет привести к числу значение в кавычках так как там должна быть точка и получается NaN
+
+
+
+
+    </script>
+</body>
+
+</html>
