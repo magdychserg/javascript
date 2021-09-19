@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        "use strict";
+
+        //задание 3
+        let a = Number(prompt("Enter first number"));
+        let b = Number(prompt("Enter second number"));
+        if (a >= 0 && b >= 0) {
+            alert(a - b)
+        } else if (a < 0 && b < 0) {
+            alert(a * b)
+        } else if (a < 0 && b >= 0 || a >= 0 && b < 0) {
+            alert(a + b);
+        }
+
+
+        //задание 4
+
+        function summa(a, b) {
+            return a + b
+        }
+        function delenie(a, b) {
+            return a / b
+        }
+        function umnoz(a, b) {
+            return a * b
+        }
+        function raznost(a, b) {
+            return a - b
+        }
+        let c = summa(5, 3)
+        alert(c)
+        let d = delenie(33, 11)
+        alert(d)
+        let e = umnoz(4, 3)
+        alert(e)
+        let f = raznost(33, 22)
+        alert(f)
+        //задание 5
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case "+":
+                    return summa(arg1, arg2)
+                case "/":
+                    return delenie(arg1, arg2)
+                case "*":
+                    return umnoz(arg1, arg2)
+                case "-":
+                    return raznost(arg1, arg2)
+            }
+        }
+    </script>
+</body>
+
+</html>
