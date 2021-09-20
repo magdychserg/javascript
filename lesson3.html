@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict'
+
+        //задание1
+        /*
+                for (let i = 0; i < 11; i++) {
+                    let a = i % 2;
+                    if (a == 1) {
+                        console.log(i + "-это не четное число")
+                    }
+                    else if (i == 0) {
+                        console.log(i + "-это ноль")
+                    }
+                    else {
+        
+                        console.log(i + "-это четное число")
+                    };
+                }
+        
+        */
+        //задание 2
+        /*
+        const post = {
+            author: "John", //вывести этот текст 
+            postId: 23,
+            comments: [
+                {
+                    userId: 10,
+                    userName: "Alex",
+                    text: "lorem ipsum",
+                    rating: {
+                        likes: 10,
+                        dislikes: 2 //вывести это число 
+                    }
+                },
+                {
+                    userId: 5, //вывести это число 
+                    userName: "Jane",
+                    text: "lorem ipsum 2", //вывести этот текст 
+                    rating: {
+                        likes: 3,
+                        dislikes: 1
+                    }
+                },
+            ]
+        };
+        console.log(post.author)
+        console.log(post.comments[0].rating.dislikes)
+        console.log(post.comments[1].userId)
+        console.log(post.comments[1].text)
+        */
+
+        //задание3
+        /*  
+             const products = [
+            { id: 3, price: 200, },
+            { id: 4, price: 900, },
+            { id: 1, price: 1000, },
+        ];
+
+        products.forEach(function (discount) {
+            console.log("Цена товара " + discount.id + " со скидкой равна " + discount.price * 0.85)
+        })
+        */
+
+        //задание 4
+        /*       const products = [
+                   {
+                       id: 3,
+                       price: 127,
+                       photos: ["1.jpg", "2.jpg",
+                       ]
+                   },
+                   {
+                       id: 5,
+                       price: 499,
+                       photos: []
+                   },
+                   {
+                       id: 10,
+                       price: 26,
+                       photos: ["3.jpg"]
+                   },
+                   {
+                       id: 8,
+                       price: 78,
+                   },
+               ];
+               let photos = products.filter(function (photo) {
+                   return photo.photos && photo.photos != 0;
+               })
+               console.log(photos)
+       
+               products.sort(function (a, b) {
+                   if (a.price > b.price) {
+                       return 1;
+                   }
+                   if (a.price < b.price) {
+                       return -1;
+                   }
+                   return 0;
+               });
+       
+               console.log(products)*/
+        //задание 6
+        for (let x = 'x'; x.length <= 20; x += 'x') {
+            console.log("x")
+        }
+
+    </script
+</body>
+
+</html>
